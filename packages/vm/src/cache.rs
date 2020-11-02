@@ -160,7 +160,6 @@ mod test {
     use std::fs::OpenOptions;
     use std::io::Write;
     use tempfile::TempDir;
-    use wabt::wat2wasm;
 
     const TESTING_GAS_LIMIT: u64 = 400_000;
     static CONTRACT: &[u8] = include_bytes!("../testdata/contract.wasm");
@@ -190,7 +189,7 @@ mod test {
     #[test]
     fn save_wasm_rejects_invalid_contract() {
         // Invalid because it doesn't contain required memory and exports
-        let wasm = wat2wasm(
+        let wasm = wat::parse_str(
             r#"(module
             (type $t0 (func (param i32) (result i32)))
             (func $add_one (export "add_one") (type $t0) (param $p0 i32) (result i32)
