@@ -1,5 +1,16 @@
 # CHANGELOG
 
+## 0.10.2 (2020-11-09)
+
+**cosmwasm-vm**
+
+* cosmwasm_vm::testing::mock_instance_options can be used for creating such a struct in integration tests.
+* Make FileSystemCache crate internal. This should be used via CosmCache.
+* Fix return type of FileSystemCache::load to VmResult<Option<Module>> in order to differentiate missing files from errors.
+* Add in-memory caching for recently used Wasm modules.
+* Rename CosmCache to just cosmwasm_vm::Cache and add CacheOptions to configure it.
+
+
 ## 0.10.1 (2020-08-25)
 
 **cosmwasm-std**
