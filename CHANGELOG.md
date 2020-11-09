@@ -1,5 +1,8 @@
 # CHANGELOG
 
+## 0.10.3 (2020-11-09)
+* Include interrupt signal porpagation
+
 ## 0.10.2 (2020-11-09)
 
 **cosmwasm-vm**

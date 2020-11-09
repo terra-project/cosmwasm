@@ -1,6 +1,6 @@
 [package]
 name = "cosmwasm-vm"
-version = "0.10.2"
+version = "0.10.3"
 authors = ["Ethan Frey <ethanfrey@users.noreply.github.com>"]
 edition = "2018"
 description = "VM bindings to run cosmwams contracts"
@@ -32,12 +32,12 @@ staking = ["cosmwasm-std/staking"]
 [dependencies]
 clru = "0.2.0"
 # Uses the path when built locally; uses the given version from crates.io when published
-cosmwasm-std = { path = "../std", version = "0.10.2" }
+cosmwasm-std = { path = "../std", version = "0.10.3" }
 serde_json = "1.0"
-wasmer-runtime-core = "=0.17.0"
-wasmer-middleware-common = "=0.17.0"
-wasmer-clif-backend = { version = "=0.17.0", optional = true }
-wasmer-singlepass-backend = { version = "=0.17.0", optional = true }
+wasmer-runtime-core = { git = "https://github.com/terra-project/wasmer", branch = "interrupt-signal-propagation" }
+wasmer-middleware-common = { git = "https://github.com/terra-project/wasmer", branch = "interrupt-signal-propagation" }
+wasmer-clif-backend = { git = "https://github.com/terra-project/wasmer", branch = "interrupt-signal-propagation", optional = true }
+wasmer-singlepass-backend = { git = "https://github.com/terra-project/wasmer", branch = "interrupt-signal-propagation", optional = true }
 schemars = "0.7"
 serde = { version = "1.0.103", default-features = false, features = ["derive", "alloc"] }
 snafu = { version = "0.6.3" }
