@@ -115,7 +115,8 @@ where
         // Get module from memory cache
         if let Some(module) = self.memory_cache.load(checksum)? {
             self.stats.hits_memory_cache += 1;
-            let instance = Instance::from_module(module, deps, gas_limit)?;
+            let instance =
+                Instance::from_module(module, deps, gas_limit)?;
             return Ok(instance);
         }
 
