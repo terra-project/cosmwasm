@@ -977,8 +977,9 @@ checksum = "cccddf32554fecc6acb585f82a32a72e28b48f8c4c1883ddfeeeaa96f7d8e519"
 
 [[package]]
 name = "wasmer-clif-backend"
-version = "0.17.0"
-source = "git+https://github.com/terra-project/wasmer?branch=interrupt-signal-propagation#567a790dae9e428650a5c85e6b4dae82a06bce47"
+version = "0.17.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "5a2fae69b1c7429316cad6743f3d2ca83cf8957924c477c5a4eff036ec0097a9"
 dependencies = [
  "byteorder",
  "cranelift-codegen",
@@ -1028,16 +1029,18 @@ dependencies = [
 
 [[package]]
 name = "wasmer-middleware-common"
-version = "0.17.0"
-source = "git+https://github.com/terra-project/wasmer?branch=interrupt-signal-propagation#567a790dae9e428650a5c85e6b4dae82a06bce47"
+version = "0.17.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "56e70825a14d100994af1d9a347591c80dea1000f2b8e455a5712c2cc23ef08d"
 dependencies = [
  "wasmer-runtime-core",
 ]
 
 [[package]]
 name = "wasmer-runtime-core"
-version = "0.17.0"
-source = "git+https://github.com/terra-project/wasmer?branch=interrupt-signal-propagation#567a790dae9e428650a5c85e6b4dae82a06bce47"
+version = "0.17.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "740161245998752cf1a567e860fd6355df0336fedca6be1940ec7aaa59643220"
 dependencies = [
  "bincode",
  "blake3",
@@ -1064,8 +1067,9 @@ dependencies = [
 
 [[package]]
 name = "wasmer-singlepass-backend"
-version = "0.17.0"
-source = "git+https://github.com/terra-project/wasmer?branch=interrupt-signal-propagation#567a790dae9e428650a5c85e6b4dae82a06bce47"
+version = "0.17.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "41a434ebf512ae1c76de46d41935a9ae10775fd937071334bdf5878cc41d9140"
 dependencies = [
  "bincode",
  "byteorder",
@@ -1082,8 +1086,9 @@ dependencies = [
 
 [[package]]
 name = "wasmer-win-exception-handler"
-version = "0.17.0"
-source = "git+https://github.com/terra-project/wasmer?branch=interrupt-signal-propagation#567a790dae9e428650a5c85e6b4dae82a06bce47"
+version = "0.17.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "1cd39f3b2bd7964b28ea6f944a7eaa445cfbc91c4f2695d188103f2689bb37d9"
 dependencies = [
  "cc",
  "libc",
