@@ -23,8 +23,9 @@ mod wasm_backend;
 pub use crate::backend::{Api, Backend, BackendError, BackendResult, GasInfo, Querier, Storage};
 pub use crate::cache::{Cache, CacheOptions, Stats};
 pub use crate::calls::{
-    call_handle, call_handle_raw, call_init, call_init_raw, call_migrate, call_migrate_raw,
-    call_query, call_query_raw,
+    call_handle, call_handle_raw, call_handle_raw_v3, call_init, call_init_raw, call_init_raw_v3,
+    call_migrate, call_migrate_raw, call_migrate_raw_v3, call_query, call_query_raw,
+    call_query_raw_v3,
 };
 pub use crate::checksum::Checksum;
 pub use crate::errors::{
